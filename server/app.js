@@ -213,6 +213,9 @@ app.get('/reviews', async (req, res) => {
     res.json(reviews);
 });
 
+// Before: Average - 5ms
+// Added index on Reviews, reviewerId
+// After: Average - 3ms
 
 
 // Root route - DO NOT MODIFY
